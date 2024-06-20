@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 20, 2024 at 04:11 PM
+-- Generation Time: Jun 20, 2024 at 04:28 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -39,8 +39,8 @@ CREATE TABLE `notes` (
 --
 
 INSERT INTO `notes` (`id`, `title`, `datetime`, `note`) VALUES
-(5, 'Roni', '2024-06-20 00:00:00', 'Sedang afk karena ada urusan.'),
-(6, 'Arul', '2024-06-20 00:00:00', 'Sedang makan di kantin.');
+(1, 'Roni', '2024-06-20 00:00:00', 'Sedang keluar karena ada urusan.'),
+(2, 'Arul', '2024-06-20 00:00:00', 'Tidak masuk sekolah karena sedang sakit.');
 
 --
 -- Indexes for dumped tables
