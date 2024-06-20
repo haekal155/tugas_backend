@@ -11,9 +11,9 @@ export const getNotes = async (req, res) => {
 };
 
 export const addNotes = async (req, res) => {
-    const { name, author } = req.body;
+    const { title, datetime, note } = req.body;
     try {
-        await query("INSERT INTO notes(title) VALUES (?)", [title]);
+        await query("INSERT INTO notes(title, datetime, note) VALUES (?, ?, ?)", [title, datetime, note]);
         return res.status(200).json({ msg: "Notes ditambahkan"});
     } catch (error) {
         console.log("Terjadi kesalahan", e);
